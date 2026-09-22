@@ -1,0 +1,383 @@
+/* -----------------------------------------
+   Theme colors
+   ----------------------------------------- */
+
+:root {
+  --background: #ffffff;
+  --surface: #f5f6f7;
+  --text: #27272a;
+  --secondary-text: #64646b;
+  --heading: #18181b;
+  --link: #2774ae;
+  --border: #dedee3;
+  --nav-background: rgba(255, 255, 255, 0.94);
+}
+
+html[data-theme="dark"] {
+  --background: #17181a;
+  --surface: #222326;
+  --text: #e4e4e7;
+  --secondary-text: #aaaab2;
+  --heading: #fafafa;
+  --link: #78b7e5;
+  --border: #37383d;
+  --nav-background: rgba(23, 24, 26, 0.94);
+}
+
+
+/* -----------------------------------------
+   General settings
+   ----------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--background);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+
+/* -----------------------------------------
+   Top navigation
+   ----------------------------------------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-background);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  min-height: 68px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.site-name {
+  color: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+}
+
+
+/* -----------------------------------------
+   Light/dark-mode button
+   ----------------------------------------- */
+
+.theme-toggle {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  color: var(--heading);
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  place-items: center;
+}
+
+.theme-toggle:hover {
+  background: var(--surface);
+}
+
+
+/* -----------------------------------------
+   Main two-column layout
+   ----------------------------------------- */
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 700px);
+  gap: 75px;
+  justify-content: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 70px 32px;
+}
+
+
+/* -----------------------------------------
+   Profile sidebar
+   ----------------------------------------- */
+
+.profile {
+  text-align: center;
+}
+
+.profile-photo {
+  display: block;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 24px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.profile h1 {
+  margin: 0 0 9px;
+  color: var(--heading);
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+.profile-position {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+.profile-university {
+  margin: 3px 0 20px;
+  color: var(--secondary-text);
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.profile-links a {
+  font-size: 0.95rem;
+}
+
+
+/* -----------------------------------------
+   Main content
+   ----------------------------------------- */
+
+.content {
+  min-width: 0;
+}
+
+.content h2 {
+  margin: 0 0 28px;
+  padding-bottom: 13px;
+  color: var(--heading);
+  font-size: 2rem;
+  line-height: 1.25;
+  border-bottom: 1px solid var(--border);
+}
+
+.content h3 {
+  margin: 42px 0 15px;
+  color: var(--heading);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.content p {
+  margin: 0 0 18px;
+}
+
+.content ul {
+  margin: 0 0 22px;
+  padding-left: 23px;
+}
+
+.content li {
+  margin-bottom: 6px;
+}
+
+
+/* -----------------------------------------
+   CV and research entries
+   ----------------------------------------- */
+
+.entry {
+  margin: 0;
+  padding: 23px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:first-of-type {
+  padding-top: 0;
+}
+
+.entry:last-child {
+  border-bottom: 0;
+}
+
+.entry h3 {
+  margin: 0 0 6px;
+  font-size: 1.12rem;
+}
+
+.entry-meta {
+  margin-bottom: 8px;
+  color: var(--secondary-text);
+  font-size: 0.93rem;
+}
+
+.entry p:last-child {
+  margin-bottom: 0;
+}
+
+.cv-link {
+  display: inline-block;
+  margin: 0 15px 25px 0;
+  font-weight: 600;
+}
+
+
+/* -----------------------------------------
+   Footer
+   ----------------------------------------- */
+
+footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 25px 32px 40px;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+  text-align: right;
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* -----------------------------------------
+   Accessibility
+   ----------------------------------------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(39, 116, 174, 0.35);
+  outline-offset: 3px;
+}
+
+
+/* -----------------------------------------
+   Tablet layout
+   ----------------------------------------- */
+
+@media (max-width: 850px) {
+  .page-layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 45px;
+  }
+
+  .profile-photo {
+    width: 155px;
+    height: 155px;
+  }
+}
+
+
+/* -----------------------------------------
+   Mobile layout
+   ----------------------------------------- */
+
+@media (max-width: 650px) {
+  .navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 17px 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+  }
+
+  .page-layout {
+    display: block;
+    padding: 45px 20px;
+  }
+
+  .profile {
+    margin-bottom: 55px;
+  }
+
+  .profile-photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .content h2 {
+    font-size: 1.75rem;
+  }
+
+  footer {
+    padding: 25px 20px 35px;
+    text-align: center;
+  }
+}
