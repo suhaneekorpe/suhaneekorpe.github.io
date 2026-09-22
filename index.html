@@ -10,157 +10,169 @@
 
   <meta
     name="description"
-    content="Personal academic website of Suhanee Korpe, a PhD student working at the intersection of statistical mechanics, information theory, and machine learning."
+    content="Academic website of Suhanee Korpe, PhD student in Computer Science and Statistics at Università Bocconi."
   >
 
   <title>Suhanee Korpe</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="academic.html">Publications & Events</a>
-  </nav>
+  <header class="topbar">
+    <nav class="navigation">
+      <a class="site-name" href="index.html">Suhanee Korpe</a>
 
-  <main>
-    <!-- Introduction -->
-    <header class="hero">
-      <p class="subtitle">PhD Student · Researcher</p>
+      <div class="nav-links">
+        <a class="active" href="index.html">About</a>
+        <a href="about.html">CV</a>
+        <a href="academic.html">Research</a>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch between light and dark mode"
+        >
+          ☾
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-layout">
+    <!-- Left profile sidebar -->
+    <aside class="profile">
+      <img
+        class="profile-photo"
+        src="profile.jpg"
+        alt="Portrait of Suhanee Korpe"
+      >
 
       <h1>Suhanee Korpe</h1>
 
-      <p class="introduction">
-        I am a PhD student in Computer Science and Statistics at
-        Università Bocconi. My research interests lie at the intersection
-        of statistical mechanics, information theory and machine learning.
+      <p class="profile-position">
+        PhD Student in Computer Science & Statistics
       </p>
 
-      <div class="hero-links">
-        <a class="button" href="about.html">
-          About Me
-        </a>
-
-        <a class="button secondary" href="academic.html">
-          Publications & Events
-        </a>
-
-        <a
-          class="button secondary"
-          href="Suhanee_Korpe_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View CV
-        </a>
-      </div>
-    </header>
-
-    <!-- Research overview -->
-    <section>
-      <h2>Research</h2>
-
-      <p>
-        I am interested in understanding learning and inference in
-        high-dimensional systems using methods from statistical physics,
-        probability, and information theory.
+      <p class="profile-university">
+        Università Bocconi
       </p>
 
-      <p>
-        My previous research includes matrix denoising with
-        non-rotational priors and phase transitions in the binary
-        symmetric perceptron.
-      </p>
-
-      <a href="about.html#research-projects">
-        Read about my research projects →
-      </a>
-    </section>
-
-    <!-- Featured publication -->
-    <section>
-      <h2>Featured Publication</h2>
-
-      <article class="entry publication">
-        <h3>The Symmetric Perceptron: A Teacher-Student Scenario</h3>
-
-        <p>
-          G. Catania, A. Decelle, and
-          <strong>S. Korpe</strong>
-        </p>
-
-        <p>
-          <em>
-            Physica A: Statistical Mechanics and its Applications
-          </em>, 2026.
-        </p>
-
-        <a href="academic.html">
-          View publication details →
+      <div class="profile-links">
+        <a href="mailto:suhanee21@iiserb.ac.in">
+          Email
         </a>
-      </article>
-    </section>
 
-    <!-- Current position -->
-    <section>
-      <h2>Current Position</h2>
-
-      <article class="entry">
-        <h3>Università Bocconi</h3>
-
-        <p class="metadata">
-          Milan, Italy · September 2026–2030
-        </p>
-
-        <p>
-          PhD in Computer Science and Statistics
-        </p>
-      </article>
-    </section>
-
-    <!-- Contact -->
-    <section>
-      <h2>Contact</h2>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:suhanee.korpe@phd.unibocconi.it">
-          suhanee.korpe@phd.unibocconi.it
-        </a>
-      </p>
-
-      <p>
-        <strong>LinkedIn:</strong>
         <a
           href="https://www.linkedin.com/in/suhanee-korpe"
           target="_blank"
           rel="noopener noreferrer"
         >
-          linkedin.com/in/suhanee-korpe
+          LinkedIn
         </a>
-      </p>
 
-      <!-- Replace YOUR-USERNAME with your GitHub username. -->
-      <p>
-        <strong>GitHub:</strong>
         <a
           href="https://github.com/YOUR-USERNAME"
           target="_blank"
           rel="noopener noreferrer"
         >
-          github.com/suhaneekorpe
+          GitHub
+        </a>
+
+        <a
+          href="Suhanee_Korpe_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main page content -->
+    <main class="content">
+      <h2>About Me</h2>
+
+      <p>
+        I am a PhD student in Computer Science and Statistics at
+        <a
+          href="https://www.unibocconi.eu/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Università Bocconi
+        </a>.
+      </p>
+
+      <p>
+        I completed my BS-MS dual degree at the Indian Institute of
+        Science Education and Research Bhopal.
+      </p>
+
+      <p>
+        My research lies at the intersection of statistical mechanics,
+        information theory, machine learning, and applied mathematics.
+        I am particularly interested in understanding learning and
+        inference in high-dimensional systems using tools from
+        statistical physics and probability.
+      </p>
+
+      <h3>Research Interests</h3>
+
+      <ul>
+        <li>Statistical mechanics of learning and inference</li>
+        <li>High-dimensional statistical inference</li>
+        <li>Information theory</li>
+        <li>Matrix denoising</li>
+        <li>Random matrix theory</li>
+        <li>Phase transitions in machine-learning models</li>
+      </ul>
+
+      <h3>Current Research</h3>
+
+      <p>
+        My previous work studied symmetric and non-symmetric matrix
+        denoising with non-rotational priors. I combined replica theory
+        and HCIZ integrals to derive free-entropy expressions and used
+        numerical simulations to investigate the corresponding phase
+        diagrams.
+      </p>
+
+      <p>
+        I have also studied phase transitions in the binary symmetric
+        perceptron in both the storage and teacher-student settings.
+      </p>
+
+      <p>
+        You can find more information on my
+        <a href="about.html">CV page</a>
+        and my
+        <a href="academic.html">research page</a>.
+      </p>
+
+      <h3>Contact</h3>
+
+      <p>
+        Email:
+        <a href="mailto:suhanee.korpe@phd.unibocconi.it">
+          suhanee.korpe@phd.unibocconi.it
         </a>
       </p>
-    </section>
-  </main>
+    </main>
+  </div>
 
-  <!-- Footer -->
   <footer>
     <p>
-      © 2026 Suhanee Korpe
+      © 2026 Suhanee Korpe ·
+      <a
+        href="https://github.com/YOUR-USERNAME"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
     </p>
   </footer>
 </body>
