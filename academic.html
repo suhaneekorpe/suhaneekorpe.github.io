@@ -2,85 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Publications and Events | Suhanee Korpe</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Publications, conferences, workshops, and summer schools attended by Suhanee Korpe."
+  >
+
+  <title>Publications & Events | Suhanee Korpe</title>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="academic.html">Publications & Events</a>
-  </nav>
+  <!-- Top navigation -->
+  <header class="topbar">
+    <nav class="navigation">
+      <a class="site-name" href="index.html">
+        Suhanee Korpe
+      </a>
 
-  <main>
-    <h1>Publications & Academic Events</h1>
+      <div class="nav-links">
+        <a href="index.html">About</a>
 
-    <section>
-      <h2>Publications</h2>
+        <a class="active" href="academic.html">
+          Publications & Events
+        </a>
 
-      <article class="entry publication">
-        <h3>The Symmetric Perceptron: A Teacher-Student Scenario</h3>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch between light and dark mode"
+        >
+          ☾
+        </button>
+      </div>
+    </nav>
+  </header>
 
-        <p>
-          G. Catania, A. Decelle, and
-          <strong>S. Korpe</strong>
-        </p>
+  <div class="page-layout">
+    <!-- Profile sidebar -->
+    <aside class="profile">
+      <img
+        class="profile-photo"
+        src="profile.jpeg"
+        alt="Portrait of Suhanee Korpe"
+      >
 
-        <p>
-          <em>
-            Physica A: Statistical Mechanics and its Applications
-          </em>, 2026.
-        </p>
+      <h1>Suhanee Korpe</h1>
 
-        <!-- Add the paper link when available:
-        <p>
-          <a href="PAPER-URL">Paper</a>
-          <a href="ARXIV-URL">arXiv</a>
-          <a href="CODE-URL">Code</a>
-        </p>
-        -->
-      </article>
-    </section>
+      <p class="profile-position">
+        PhD Student in Computer Science & Statistics
+      </p>
 
-    <section>
-      <h2>Conferences, Workshops & Summer Schools</h2>
+      <p class="profile-university">
+        Università Bocconi
+      </p>
 
-      <article class="entry">
-        <h3>
-          ICTP-INdAM-SLMath Summer Graduate School for Machine Learning
-        </h3>
+      <div class="profile-links">
+        <a href="mailto:suhanee21@iiserb.ac.in">
+          Email
+        </a>
 
-        <p class="metadata">
-          ICTP, Trieste | 15–27 June 2026
-        </p>
+        <a
+          href="https://www.linkedin.com/in/suhanee-korpe"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
 
-        <p><strong>Participation:</strong> Poster presentation</p>
+        <!-- Replace YOUR-USERNAME with your GitHub username. -->
+        <a
+          href="https://github.com/YOUR-USERNAME"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
 
-        <p>
-          Participated in the summer graduate school and presented
-          a poster on my research.
-        </p>
+        <a
+          href="Suhanee_Korpe_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+      </div>
+    </aside>
 
-        <!-- Add the poster when ready:
-        <p>
-          <a href="files/poster.pdf">View poster</a>
-        </p>
-        -->
-      </article>
+    <!-- Main page content -->
+    <main class="content">
+      <h2>Publications & Academic Events</h2>
 
-      <article class="entry">
-        <h3>Youth in High Dimensions 2025</h3>
+      <!-- Publications -->
+      <section>
+        <h3>Publications</h3>
 
-        <p class="metadata">
-          ICTP, Trieste | July 2025
-        </p>
+        <article class="entry">
+          <h4>
+            The Symmetric Perceptron: A Teacher-Student Scenario
+          </h4>
 
-        <p><strong>Participation:</strong> Attendee</p>
-      </article>
-    </section>
-  </main>
+          <p>
+            G. Catania, A. Decelle, and
+            <strong>S. Korpe</strong>
+          </p>
+
+          <p class="entry-meta">
+            <em>
+              Physica A: Statistical Mechanics and its Applications
+            </em>, 2026
+          </p>
+
+          <!-- Add links when available.
+
+          <p class="publication-links">
+            <a
+              href="PAPER-URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Journal
+            </a>
+
+            <a
+              href="ARXIV-URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              arXiv
+            </a>
+          </p>
+
+          -->
+        </article>
+      </section>
+
+      <!-- Conferences, workshops, and summer schools -->
+      <section>
+        <h3>Conferences, Workshops & Summer Schools</h3>
+
+        <article class="entry">
+          <h4>
+            ICTP-INdAM-SLMath Summer Graduate School for Machine Learning
+          </h4>
+
+          <p class="entry-meta">
+            ICTP, Trieste, Italy · 15–27 June 2026
+          </p>
+
+          <p>
+            <strong>Participation:</strong> Poster presentation
+          </p>
+
+          <p>
+            Participated in the summer graduate school and presented
+            a poster on my research in high-dimensional statistical
+            inference and matrix denoising.
+          </p>
+
+          <!-- Add your poster after uploading it.
+
+          <p>
+            <a
+              href="poster.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View poster
+            </a>
+          </p>
+
+          -->
+        </article>
+
+        <article class="entry">
+          <h4>Youth in High Dimensions 2025</h4>
+
+          <p class="entry-meta">
+            ICTP, Trieste, Italy · July 2025
+          </p>
+
+          <p>
+            <strong>Participation:</strong> Attendee
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Suhanee Korpe ·
+
+      <!-- Replace YOUR-USERNAME with your GitHub username. -->
+      <a
+        href="https://github.com/YOUR-USERNAME"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
